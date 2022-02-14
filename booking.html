@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frontend Mentor | Dine Website Challenge</title>
+    <meta name="description" content="Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse." />
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="reservations">
+        <div class="container">
+            <a href="index.html"><img class="dine-brand" src="images/logo.svg" alt="Dine Logo"></a>
+            <div class="reservations-content">
+                <div class="reservations-content-text">
+                    <h1 class="heading-one reservations-heading">Reservations</h1>
+                    <p class="body-copy body-copy-light reservations-body">We can’t wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you.</p>
+                </div>
+                <div class="reservations-content-form">
+                    <form action="" class="reservations-form" autocomplete="off">
+                        <div class="reservations-form-group">
+                            <label class="reservations-form-label" for="name">Name</label>
+                            <input class="reservations-form-input" id="name" type="text" placeholder="Name">
+                            <small></small>
+                        </div>
+                        <div class="reservations-form-group">
+                            <label class="reservations-form-label" for="email">Email</label>
+                            <input class="reservations-form-input" id="email" placeholder="Email">
+                            <small></small>
+                        </div>
+                        <div class="reservations-form-group reservations-form-group-datetime">
+                            <div class="reservations-form-group-datetime-finput">
+                                <span class="reservations-form-text">Pick a date</span>
+                                <small></small>
+                            </div>
+                            <input class="reservations-form-input" id="day" type="number" pattern="[0-9]*" inputmode="numeric" placeholder="DD">
+                            <input class="reservations-form-input" id="month" type="number" pattern="[0-9]*" inputmode="numeric" placeholder="MM">
+                            <input class="reservations-form-input" id="year" type="number" pattern="[0-9]*" inputmode="numeric" placeholder="YYYY">
+                        </div>
+                        <div class="reservations-form-group reservations-form-group-datetime">
+                            <div class="reservations-form-group-datetime-finput">
+                                <span class="reservations-form-text">Pick a time</span>
+                                <small></small>
+                            </div>
+                            <input class="reservations-form-input" id="hour" type="number" pattern="[0-9]*" inputmode="numeric" placeholder="09">
+                            <input class="reservations-form-input" id="minute" type="number" pattern="[0-9]*" inputmode="numeric" placeholder="00">
+                            <select class="reservations-form-select" id="meridiem">
+                                <option value="AM">AM</option>
+                                <option value="PM">PM</option>
+                            </select>
+                        </div>
+                        <div class="reservations-form-group reservations-form-group-numpicker">
+                            <button class="reservations-form-button-numpicker" id="minus">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="3" pointer-events="bounding-box">
+                                    <path fill="#9E7F66" d="M6.425 2.977V.601H.629v2.376z" /></svg>
+                            </button>
+                            <p><span id="num-of-people">2</span> <span class="numpicker-text">people</span></p>
+                            <button class="reservations-form-button-numpicker" id="plus">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" pointer-events="bounding-box">
+                                    <path fill="#9E7F66" d="M6.227 10.156V6.727h3.429V4.342H6.227V.913H3.842v3.429H.413v2.385h3.429v3.429z" /></svg>
+                        </div>
+                        <div class="reservations-form-group">
+                            <button class="reservations-form-button">Make reservation</button>
+                        </div>
+                    </form>
+                    <svg
+                class="pattern-lines"
+                xmlns="http://www.w3.org/2000/svg"
+                width="160"
+                height="76"
+              >
+                <g fill="#9E7F66" fill-rule="evenodd">
+                  <path
+                    d="M0 70h160v6H0zM0 56h160v6H0zM0 42h160v6H0zM0 28h160v6H0zM0 14h160v6H0zM0 0h160v6H0z"
+                  />
+                </g>
+              </svg>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="reservations-bottom"></section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">
+                <a href="index.html"><img src="images/logo.svg" alt="Dine Logo"></a>
+            </div>
+            <div class="footer-details">
+                <div class="footer-details-address">
+                    <span>Marthwaite, Sedbergh</span>
+                    <span>Cumbria</span>
+                    <span><a href="tel:+00 44 123 4567" class="tel">+00 44 123 4567</a></span>
+                </div>
+                <div class="footer-details-hours">
+                    <span>Open Times</span>
+                    <span>Mon - Fri: 09:00 AM - 10:00 PM</span>
+                    <span>Sat - Sun: 09:00 AM - 11:30 PM</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/booking.js" defer></script>
+</body>
+</html>
