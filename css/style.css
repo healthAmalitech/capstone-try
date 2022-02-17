@@ -32,7 +32,7 @@ html {
 body {
   font-family: "Spartan", sans-serif;
   background-color: var(--color-black);
-  min-height: 100vh;
+  min-height: 110vh; //change min-height to 110
   min-width: 32rem;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
