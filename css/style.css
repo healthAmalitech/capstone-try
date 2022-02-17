@@ -1436,3 +1436,7 @@ cursor: pointer;
   color: var(--color-error);
   cursor: pointer;
 }
+
+#social{
+  color: aqua;
+}
